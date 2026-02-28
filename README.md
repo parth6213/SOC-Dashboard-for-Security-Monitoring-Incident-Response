@@ -126,7 +126,7 @@ All screenshots are available in the `screenshots/` folder.
 ![Dashboard Top](screenshots/dashboard/2.dashboard_top.png)
 
 ### 📜 Logs Monitoring
-![Logs](screenshots/dashboard/3.dashboard_logs.pmg)
+![Logs](screenshots/dashboard/3.dashboard_logs.png)
 
 ### 🚨 Alerts Detection
 ![Alerts](screenshots/dashboard/4.dashboard_alerts.png)
@@ -155,3 +155,4 @@ Through this project, I gained practical understanding of how real-world securit
 - Hands-on experience building a full-stack security tool using Flask
 
 - Importance of clean UI and clear alert visibility for security analysts
+
