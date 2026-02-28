@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+{% block title %}Register{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card shadow-sm">
+            <div class="card-body p-4">
+
+                <h4 class="text-center mb-4">Create Account</h4>
+
+                {% if errors %}
+                <div class="alert alert-danger">
+                    <ul class="mb-0">
+                        {% for e in errors %}
+                        <li>{{ e }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+
+                <!-- Password requirements (polished, non-boring) -->
+                <div class="password-box mb-4">
+                    <strong>Password requirements</strong>
+                   <ul class="mb-0">
+                       <li>Minimum length of <strong>8 characters</strong></li>
+                       <li>At least <strong>one uppercase letter</strong> (A–Z)</li>
+                       <li>At least <strong>one lowercase letter</strong> (a–z)</li>
+                       <li>At least <strong>one numeric digit</strong> (0–9)</li>
+                       <li>At least <strong>one special character</strong> (!@#$%^&*)</li>
+                       <li>Password must <strong>not be identical to or directly derived from the username</strong></li>
+
+                   </ul>
+
+                </div>
+
+                <form method="POST">
+                    <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+
+                    <div class="mb-3">
+                        <label class="form-label">Username</label>
+                        <input class="form-control" name="username" required>
+                    </div>
+
+                    <div class="mb-3 password-wrapper">
+                        <label class="form-label">Password</label>
+                        <input
+                            type="password"
+                            class="form-control"
+                            name="password"
+                            id="reg-password"
+                            required
+                        >
+                        <span class="toggle-password"
+                              onclick="togglePassword('reg-password', this)">👁</span>
+                    </div>
+
+                    <div class="mb-4 password-wrapper">
+                        <label class="form-label">Confirm Password</label>
+                        <input
+                            type="password"
+                            class="form-control"
+                            name="confirm_password"
+                            id="reg-confirm"
+                            required
+                        >
+                        <span class="toggle-password"
+                              onclick="togglePassword('reg-confirm', this)">👁</span>
+                    </div>
+
+                    <button class="btn btn-success w-100">
+                        Register
+                    </button>
+                </form>
+
+                <p class="text-center mt-3 mb-0">
+                    Already registered? <a href="/login">Login</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
