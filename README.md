@@ -120,19 +120,19 @@ This workflow demonstrates how security incidents are identified, analyzed, and 
 All screenshots are available in the `screenshots/` folder.
 
 ### 🔐 Login Page
-![Login Page](screenshots/login_page.png)
+![Login Page](screenshots/1.login_page.png)
 
 ### 📊 Dashboard Overview
-![Dashboard Top](screenshots/dashboard/dashboard_top.png)
+![Dashboard Top](screenshots/dashboard/2.dashboard_top.png)
 
 ### 📜 Logs Monitoring
-![Logs](screenshots/dashboard/dashboard_logs.png)
+![Logs](screenshots/dashboard/3.dashboard_logs.pmg)
 
 ### 🚨 Alerts Detection
-![Alerts](screenshots/dashboard/dashboard_alerts.png)
+![Alerts](screenshots/dashboard/4.dashboard_alerts.png)
 
 ### 🔄 Alert Lifecycle (Open → Closed)
-![Alert Close](screenshots/dashboard/alert_close.png)
+![Alert Close](screenshots/dashboard/5.alert_close.png)
 
 ## 🚀 Future Improvements
 
@@ -153,4 +153,5 @@ Through this project, I gained practical understanding of how real-world securit
 - How to define appropriate response actions for each type of threat
 - Understanding the complete SOC workflow: Detection → Alert → Review → Action → Closure
 - Hands-on experience building a full-stack security tool using Flask
+
 - Importance of clean UI and clear alert visibility for security analysts
